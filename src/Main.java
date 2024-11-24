@@ -2,30 +2,30 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        int age = 3;
+        int age = 1;
         System.out.println("Task 1");
         if(age >= 18) {
             System.out.println("Если возраст человека равен " + age + ", то он совершеннолетний.");
         }
-        if(age < 18){
+        else {
             System.out.println("Если возраст человека равен " + age + ", то он не достиг совершеннолетия, нужно немного подождать.");
         }
         System.out.println(" ");
         System.out.println("Task 2");
-        int temperOutdoor = 6;
+        int temperOutdoor = 7;
         if(temperOutdoor <= 5){
             System.out.println("На улице " + temperOutdoor + " градусов, нужно надеть шапку.");
         }
-        if(temperOutdoor > 5){
+        else {
             System.out.println("На улице " + temperOutdoor + " градусов, можно идти без шапки.");
         }
         System.out.println(" ");
         System.out.println("Task 3");
-        int speed = 61;
+        int speed = 83;
         if(speed <= 60){
             System.out.println("Если скорость " + speed + ", можно ездить спокойно.");
         }
-        if(speed > 60){
+        else{
             System.out.println("Если скорость " + speed + ", придется заплатить штраф.");
         }
         System.out.println(" ");
@@ -67,37 +67,23 @@ public class Main {
         else if(capacityNow == 102){
             System.out.println("Заполненность вагона " + capacityNow + " человека. Мест больше нет.");
         }
+
         System.out.println(" ");
         System.out.println("Task 7");
-        int numberOne = 1;
+        int numberOne = 5;
         int numberTwo = 2;
-        int numberThree = 3;
-        if(numberOne > numberTwo) {
-            System.out.println("Первое число - " + numberOne + " больше, чем второе - " + numberTwo);
+        int numberThree = 4;
+        if(numberOne > numberTwo && numberOne > numberThree) {
+            System.out.println("Первое число - " + numberOne + " наибольшее.");
         }
-        else if(numberOne < numberTwo) {
-            System.out.println("Первое число - " + numberOne + " меньше, чем второе - " + numberTwo);
+        else if(numberTwo > numberOne && numberTwo > numberThree) {
+            System.out.println("Второе число - " + numberTwo + " наибольшее.");
         }
-        else {
-            System.out.println("Первое и второе числа равны");
+        else if(numberThree > numberOne && numberThree > numberTwo) {
+            System.out.println("Третье число - " + numberThree + " наибольшее.");
         }
-        if(numberTwo > numberThree) {
-            System.out.println("Второе число - " + numberTwo + " больше, чем третье - " + numberThree);
-        }
-        else if(numberTwo < numberThree) {
-            System.out.println("Второе число - " + numberTwo + " меньше, чем третье - " + numberThree);
-        }
-        else {
-            System.out.println("Второе и третье числа равны");
-        }
-        if(numberOne > numberThree) {
-            System.out.println("Первое число - " + numberOne + " больше, чем третье - " + numberThree);
-        }
-        else if(numberOne < numberThree) {
-            System.out.println("Первое число - " + numberOne + " меньше, чем третье - " + numberThree);
-        }
-        else {
-            System.out.println("Первое и третье числа равны");
+        else{
+            System.out.println("Все числа равны.");
         }
     }
 }
