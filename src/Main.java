@@ -82,7 +82,7 @@ public class Main {
         else if(numberThree > numberOne && numberThree > numberTwo) {
             System.out.println("Третье число - " + numberThree + " наибольшее.");
         }
-        else{
+        else {
             System.out.println("Все числа равны.");
         }
     }
